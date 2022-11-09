@@ -40,13 +40,13 @@
         <starter.min.bundles.count>126</starter.min.bundles.count>
 
         <!-- versions to be replaced in the feature files -->
-        <asm.version>9.2</asm.version>
-        <jackrabbit.version>2.20.4</jackrabbit.version>
-        <oak.version>1.42.0</oak.version>
+        <asm.version>9.3</asm.version>
+        <jackrabbit.version>2.20.6</jackrabbit.version>
+        <oak.version>1.44.0</oak.version>
         <slf4j.version>1.7.36</slf4j.version>
-        <composum.nodes.version>4.1.1</composum.nodes.version>
-        <jackson.version>2.13.1</jackson.version>
-        <groovy.version>3.0.9</groovy.version>
+        <composum.nodes.version>4.1.2</composum.nodes.version>
+        <jackson.version>2.13.3</jackson.version>
+        <groovy.version>3.0.12</groovy.version>
         <!-- skip index generation for all builds except for CI and release -->
         <bnd.index.generation.skip>true</bnd.index.generation.skip>
         <docker.skip>true</docker.skip>
@@ -77,7 +77,7 @@
             <plugin>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>slingfeature-maven-plugin</artifactId>
-                <version>1.5.16</version>
+                <version>1.6.8</version>
                 <extensions>true</extensions>
                 <configuration>
                     <replacePropertyVariables>asm.version,jackrabbit.version,groovy.version,oak.version,slf4j.version,composum.nodes.version,jackson.version</replacePropertyVariables>
@@ -403,6 +403,37 @@
                             <exclude>sling/**</exclude>
                             <exclude>launcher/**</exclude>
                         </excludes>
+                    </configuration>
+                </plugin>
+                <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.apache.maven.plugins
+                                        </groupId>
+                                        <artifactId>
+                                            maven-antrun-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [3.0.0,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>run</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
                     </configuration>
                 </plugin>
             </plugins>
