@@ -1,5 +1,5 @@
 {
     "content-packages:ARTIFACTS|true": [
-        "com.adobe.cq:core.wcm.components.all:zip:2.21.0"
+        "com.adobe.cq:core.wcm.components.all:zip:2.21.2"
     ]
 }
