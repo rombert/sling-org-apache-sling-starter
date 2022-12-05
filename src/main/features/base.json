@@ -211,7 +211,7 @@
             "start-order":"10"
         },
         {
-            "id":"org.apache.tika:tika-core:1.28.4",
+            "id":"org.apache.tika:tika-core:2.6.0",
             "start-order":"10"
         },
         {
