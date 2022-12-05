@@ -31,7 +31,7 @@
             "start-order":"20"
         },
         {
-            "id":"org.apache.httpcomponents:httpclient-osgi:4.5.13",
+            "id":"org.apache.httpcomponents:httpclient-osgi:4.5.14",
             "start-order":"15"
         },
         {
