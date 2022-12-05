@@ -35,7 +35,7 @@
             "start-order":"15"
         },
         {
-            "id":"org.apache.httpcomponents:httpcore-osgi:4.4.15",
+            "id":"org.apache.httpcomponents:httpcore-osgi:4.4.16",
             "start-order":"15"
         },
         {
