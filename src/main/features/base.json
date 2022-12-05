@@ -203,7 +203,7 @@
             "start-order":"10"
         },
         {
-            "id":"org.apache.pdfbox:jempbox:1.8.16",
+            "id":"org.apache.pdfbox:jempbox:1.8.17",
             "start-order":"10"
         },
         {
