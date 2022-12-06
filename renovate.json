@@ -3,5 +3,13 @@
   "extends": [
     "config:base"
   ],
-  "enabledManagers": ["osgifeature"]
+  "enabledManagers": ["osgifeature", "regex"],
+  "regexManagers": [
+    {
+      "fileMatch": ["pom.xml"],
+      "matchStrings": ["<jackson.version>(?<currentValue>.*?)</jackson.version>\\n"],
+      "depNameTemplate": "com.fasterxml.jackson.core:jackson-core",
+      "datasourceTemplate": "maven"
+    }
+  ]
 }
