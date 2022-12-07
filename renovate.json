@@ -3,7 +3,7 @@
   "extends": [
     "config:base"
   ],
-  "enabledManagers": ["osgifeature", "regex", "maven"],
+  "enabledManagers": ["osgi", "regex", "maven"],
   "regexManagers": [
     {
       "fileMatch": ["pom.xml"],
